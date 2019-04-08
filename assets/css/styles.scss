@@ -1,0 +1,96 @@
+---
+---
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "custom-variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/jumbotron";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/toasts";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/spinners";
+@import "bootstrap/utilities";
+@import "bootstrap/print";
+
+body{
+	background-color: #111;
+}
+
+
+
+.experiences {
+
+	.card {
+		border-bottom: $spacer solid #111 !important;
+	}
+
+	.experience {
+		background-color: #222;
+		border-bottom: $spacer solid #111;
+		@extend  .p-4;
+		@extend  .text-light;
+
+		&:first-of-type {
+			border-top: $spacer solid #111;
+		}
+		&:last-of-type {
+			border-bottom: 0!important;
+		}
+	}
+	.expTitle {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.badge {
+			align-self: flex-start;
+		}
+	}
+
+	.expContent {
+		&:last-of-type {
+			margin-bottom:0;
+		}
+	}
+}
+
+
+.avatar-wrapper {
+	position: relative;
+
+	.avatar-gif {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+
+
