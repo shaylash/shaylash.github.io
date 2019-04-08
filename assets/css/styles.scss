@@ -51,13 +51,19 @@ body{
 
 	.card {
 		border-bottom: $spacer solid #111 !important;
+
+		.card-header {
+			button {
+				font-size: 1.5rem !important;
+			}
+		}
 	}
 
 	.experience {
-		background-color: #222;
 		border-bottom: $spacer solid #111;
 		@extend  .p-4;
 		@extend  .text-light;
+		@extend  .bg-dark;
 
 		&:first-of-type {
 			border-top: $spacer solid #111;
@@ -76,6 +82,10 @@ body{
 	}
 
 	.expContent {
+		a {
+			color: theme_color('light');
+			text-decoration: underline;
+		}
 		&:last-of-type {
 			margin-bottom:0;
 		}
@@ -95,3 +105,8 @@ body{
 
 
 
+.box-title {
+	@extend .d-flex;
+	@extend .justify-content-start;
+	@extend .p-3;
+}
