@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded",function(){
 });
 
 function move() {
-  let elems = document.getElementsByClassName("progress-bar");   
+  let elems = document.getElementsByClassName("progress-bar");
 
   [].forEach.call(elems, function (el, index) {
 
@@ -22,8 +22,8 @@ function move() {
       if (width >= el.getAttribute("aria-valuenow")) {
         clearInterval(id);
       } else {
-        width++; 
-        el.style.width = width + '%'; 
+        width++;
+        el.style.width = width + '%';
       }
     }
   });
