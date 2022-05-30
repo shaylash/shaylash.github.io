@@ -47,7 +47,7 @@ function gifHover() {
   imageWrapper.addEventListener("mouseout", () => {
     let src = image.src;
     console.log(src)
-    image.src = src.replace(/\.[^/.]+$/, ".jpg")
+    image.src = src.replace(/\.[^/.]+$/, ".jpeg")
   })
 
 }
