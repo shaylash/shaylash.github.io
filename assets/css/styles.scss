@@ -103,7 +103,11 @@ body{
 	}
 }
 
-
+.mastodon {
+	img {
+		height: 16px;
+	}
+}
 
 .box-title {
 	@extend .d-flex;
